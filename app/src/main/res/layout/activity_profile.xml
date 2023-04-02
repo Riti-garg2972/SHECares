@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FDF8EFD7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <!--        //whole linear layout-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/box1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="My Profile"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <!--            box1 linear layout-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/bg"
+                android:orientation="vertical">
+
+                <!--                row1 linear layout-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="6"
+                        android:drawableLeft="@drawable/drop"
+                        android:drawablePadding="10dp"
+                        android:text="Period Length"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/periodlength"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="4 days"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+                <!--                row2 linear layout-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="6"
+                        android:drawableLeft="@drawable/cycle"
+                        android:drawablePadding="10dp"
+                        android:text="Cycle Length"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/cyclelength"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="28 days"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <!--                row3 linear layout-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="6"
+                        android:drawableLeft="@drawable/ic_baseline_update_24"
+                        android:drawablePadding="10dp"
+                        android:text="Next Date"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/nextdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="29-sep-2021"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--                box 2nd linear layout-->
+
+
+            <TextView
+                android:id="@+id/box2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="Reminders"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <!--            box1 linear layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg"
+                android:orientation="vertical">
+
+                <!--                row1 linear layout-->
+                <LinearLayout
+                    android:id="@+id/reminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="6"
+                        android:drawableLeft="@drawable/ic_baseline_notifications_active_24"
+                        android:drawablePadding="10dp"
+                        android:text="Reminders"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--            3rd box linear layout-->
+
+            <TextView
+                android:id="@+id/box3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="BMI Calculator"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <!--            box1 linear layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg"
+                android:orientation="vertical">
+
+                <!--                row1 linear layout-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="6"
+                        android:text="BMI Calculator"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--4th box Linear Layout -->
+
+<!--            <TextView-->
+<!--                android:id="@+id/box4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Input"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp" />-->
+
+<!--            &lt;!&ndash;            box1 linear layout&ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:background="@drawable/bg"-->
+<!--                android:orientation="vertical">-->
+
+<!--                &lt;!&ndash;                row1 linear layout&ndash;&gt;-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/wt"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_weight="6"-->
+<!--                        android:drawableLeft="@drawable/drop"-->
+<!--                        android:drawablePadding="10dp"-->
+<!--                        android:text="Weight"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/Weight"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text=" kg"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                </LinearLayout>-->
+<!--                &lt;!&ndash;                row2 linear layout&ndash;&gt;-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/ht"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_weight="6"-->
+<!--                        android:drawableLeft="@drawable/cycle"-->
+<!--                        android:drawablePadding="10dp"-->
+<!--                        android:text="Height"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/height"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="feet"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                &lt;!&ndash;                row3 linear layout&ndash;&gt;-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/ag"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_weight="6"-->
+<!--                        android:drawableLeft="@drawable/ic_baseline_update_24"-->
+<!--                        android:drawablePadding="10dp"-->
+<!--                        android:text="Age"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/age"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="years"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                &lt;!&ndash;                row1 linear layout&ndash;&gt;-->
+
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash;            5th box linear layout&ndash;&gt;-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/box5"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="INPUT"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp" />-->
+
+<!--            &lt;!&ndash;            box1 linear layout&ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:background="@drawable/bg"-->
+<!--                android:orientation="vertical">-->
+
+<!--                &lt;!&ndash;                row1 linear layout&ndash;&gt;-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/fl"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_weight="6"-->
+<!--                        android:drawableLeft="@drawable/drop"-->
+<!--                        android:drawablePadding="10dp"-->
+<!--                        android:text="Flow"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/flow"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="4 days"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                </LinearLayout>-->
+<!--                &lt;!&ndash;                row2 linear layout&ndash;&gt;-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_weight="6"-->
+<!--                        android:drawableLeft="@drawable/cycle"-->
+<!--                        android:drawablePadding="10dp"-->
+<!--                        android:text="Marital Status"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                    <Spinner-->
+<!--                        android:id="@+id/maritalstatus"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="28 days"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                &lt;!&ndash;                row3 linear layout&ndash;&gt;-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/np"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_weight="6"-->
+<!--                        android:drawableLeft="@drawable/ic_baseline_update_24"-->
+<!--                        android:drawablePadding="10dp"-->
+<!--                        android:text="Number of pregnancies"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/nopreg"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="29-sep-2021"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/ic"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_weight="6"-->
+<!--                        android:drawableLeft="@drawable/ic_baseline_update_24"-->
+<!--                        android:drawablePadding="10dp"-->
+<!--                        android:text="Intercourse"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/intercourse"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="29-sep-2021"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                &lt;!&ndash;                row1 linear layout&ndash;&gt;-->
+
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash; 6th box &ndash;&gt;-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/box6"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Reminders"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp" />-->
+
+<!--            &lt;!&ndash;            box1 linear layout&ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:background="@drawable/bg"-->
+<!--                android:orientation="vertical">-->
+
+<!--                &lt;!&ndash;                row1 linear layout&ndash;&gt;-->
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/Reminder"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_weight="6"-->
+<!--                        android:drawableLeft="@drawable/ic_baseline_notifications_active_24"-->
+<!--                        android:drawablePadding="10dp"-->
+<!--                        android:text="Reminders"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+
+<!--            &lt;!&ndash;   6th Linear Layout &ndash;&gt;-->
+
+            <!-- 7th box -->
+
+            <TextView
+                android:id="@+id/box7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="General Settings"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/bg"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <!--                row1 linear layout-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/language"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Language Options"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <!--                row2 linear layout-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/face"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Symptoms &amp; Moods"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <!--                row3 linear layout-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/hide"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Show / Hide Options"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+                <!--                row4 linear layout-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/calendar"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Calendar"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <!--            8th box linear layout-->
+
+            <TextView
+                android:id="@+id/box8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="Support Us"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/bg"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <!--                row1 linear layout-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/video"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Video Tutorial"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <!--                row2 linear layout-->
+
+                <TextView
+                    android:id="@+id/feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/feedback"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Bug Report &amp; Feedback"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <!--                row3 linear layout-->
+                <TextView
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/share"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Share with Friends"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+                <!--                row4 linear layout-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/privacy_policy"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Privacy Policy"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:text="Delete All Data"
+                android:textAlignment="center"
+                android:textColor="#E70D4F"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

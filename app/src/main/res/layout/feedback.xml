@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="FEEDBACK!"
+            android:textColor="#21A5B7"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Please Enter Your Valuable Feedback"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <EditText
+            android:id="@+id/review"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg"
+            android:gravity="start"
+            android:hint="Enter Your Review Here "
+            android:lines="6"
+            android:paddingStart="8dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0" />
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/textView4"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginTop="35dp"-->
+        <!--                android:text="Rate Us"-->
+        <!--                android:textColor="#B11E31"-->
+        <!--                android:textSize="21sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintHorizontal_bias="0.498"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/Edt2" />-->
+
+        <!--            <LinearLayout-->
+        <!--                android:id="@+id/linearLayout"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginTop="20dp"-->
+        <!--                android:elevation="30dp"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintHorizontal_bias="0.5"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/textView4">-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/smile1"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginEnd="10dp"-->
+        <!--                    android:layout_marginRight="10dp"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    app:srcCompat="@drawable/smiley1"-->
+        <!--                    tools:ignore="VectorDrawableCompat"-->
+        <!--                    tools:layout_editor_absoluteX="150dp"-->
+        <!--                    tools:layout_editor_absoluteY="367dp" />-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/smile2"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginEnd="10dp"-->
+        <!--                    android:layout_marginRight="10dp"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    app:srcCompat="@drawable/smiley"-->
+        <!--                    tools:ignore="VectorDrawableCompat"-->
+        <!--                    tools:layout_editor_absoluteX="150dp"-->
+        <!--                    tools:layout_editor_absoluteY="367dp" />-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/smile3"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginEnd="10dp"-->
+        <!--                    android:layout_marginRight="10dp"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    app:srcCompat="@drawable/neutral"-->
+        <!--                    tools:ignore="VectorDrawableCompat"-->
+        <!--                    tools:layout_editor_absoluteX="150dp"-->
+        <!--                    tools:layout_editor_absoluteY="367dp" />-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/smile4"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginEnd="10dp"-->
+        <!--                    android:layout_marginRight="10dp"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    app:srcCompat="@drawable/sad_smiley"-->
+        <!--                    tools:ignore="VectorDrawableCompat"-->
+        <!--                    tools:layout_editor_absoluteX="150dp"-->
+        <!--                    tools:layout_editor_absoluteY="367dp" />-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/smile5"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    app:srcCompat="@drawable/angry_smiley"-->
+        <!--                    tools:ignore="VectorDrawableCompat"-->
+        <!--                    tools:layout_editor_absoluteX="150dp"-->
+        <!--                    tools:layout_editor_absoluteY="367dp" />-->
+
+        <!--            </LinearLayout>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
